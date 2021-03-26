@@ -609,29 +609,29 @@ function container_full_height_init(){
 /* Console message
 -------------------------------------------------------*/
 
-if( typeof console === 'object' ) {
-    console.log(
-        '\n' +
-        '\n' +
-        '      ("`-’-/").___..--’’"`-._\n' +
-        '       `6_ 6  )   `-.  (     ).`-.__.‘)\n' +
-        '       (_Y_.)’  ._   )  `._ `. ``-..-’\n' +
-        '     _..`--’_..-_/  /--’_.’ ,’\n' +
-        '    (il),-’‘  (li),’  ((!.-‘\n' +
-        '\n' +
-        '\n' +
-        'Hi there! Welcome to my portfolio\n' +
-        '\n' +
-        'If you\'re an aspiring or established developer\n' +
-        'or looking to hire, I would love to hear from you\n' +
-        '\n' +
-        'Please email me at jeffrey.quan@hotmail.com\n' +
-        '\n' +
-        '— jeffrey\n'
-    );
-}
+// if( typeof console === 'object' ) {
+//     console.log(
+//         '\n' +
+//         '\n' +
+//         '      ("`-’-/").___..--’’"`-._\n' +
+//         '       `6_ 6  )   `-.  (     ).`-.__.‘)\n' +
+//         '       (_Y_.)’  ._   )  `._ `. ``-..-’\n' +
+//         '     _..`--’_..-_/  /--’_.’ ,’\n' +
+//         '    (il),-’‘  (li),’  ((!.-‘\n' +
+//         '\n' +
+//         '\n' +
+//         'Hi there! Welcome to my portfolio\n' +
+//         '\n' +
+//         'If you\'re an aspiring or established developer\n' +
+//         'or looking to hire, I would love to hear from you\n' +
+//         '\n' +
+//         'Please email me at jeffrey.quan@hotmail.com\n' +
+//         '\n' +
+//         '— jeffrey\n'
+//     );
+// }
 
-console.log('Its working')
+
 
 let theme = localStorage.getItem('theme')
 
@@ -642,7 +642,6 @@ if(theme == null){
 }
 
 let themeDots = document.getElementsByClassName('theme-dot')
-console.log("did we get anything: " + themeDots)
 
 for (var i=0; themeDots.length > i; i++){
 	themeDots[i].addEventListener('click', function(){
